@@ -82,8 +82,7 @@ When you want to train Stage I, simply modify the `train_stage` to 1 in `./confi
 To train Stage II, change `train_stage` to 2 in `./config/dpl.yaml` and set the `checkpoint_path` to the optimal weight path from Stage I 「selected by running the `test_1.py`」.
 
 > 🪧 **Regarding the selection of Stage I checkpoint weight for training Stage II:** <br/>
-> Typically, the optimal weights from Stage I on the FF++c40 validation set are used as the pre-trained weights for Stage II. <br/>
-> **Note:** Both Stage I and Stage II are trained on the FF++c23 training set, and the FF++c40 dataset is not involved in the training process.
+> Typically, the weight that achieves the best performance on the FF++c40 validation set during Stage I is considered the optimal weight. The optimal weight in Stage I is then used as the pretrained weight for Stage II.
 
 Running the following script to evaluate the performance of the trained weights on FF++c40, and use the results to select the optimal weights:
 
