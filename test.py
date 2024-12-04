@@ -65,7 +65,7 @@ if __name__ == "__main__":
     model.model.load_state_dict(checkpoint['model'], strict=True)
     if train_stage != 1:
         model.model.fsm.policy.load_state_dict(checkpoint['policy'], strict=True)
-        model.model.fsm.policy_old.load_state_dict(model.model.ppo.policy.state_dict())
+        model.model.fsm.policy_old.load_state_dict(model.model.fsm.policy.state_dict())
         model.model.fsm.policy.eval()
         model.model.fsm.policy_old.eval()
 
