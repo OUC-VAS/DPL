@@ -1,0 +1,128 @@
+{
+    "FF-NT":{
+        "FF-real":{
+            "train":{
+                "c40":{
+                    "899":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c40/frames/899/258.png",
+                            "FaceForensics++/original_sequences/youtube/c40/frames/899/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "899":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c23/frames/899/258.png",
+                            "FaceForensics++/original_sequences/youtube/c23/frames/899/352.png"
+                        ]
+                    }
+                }
+            },
+            "test":{
+                "c40":{
+                    "421":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c40/frames/421/258.png",
+                            "FaceForensics++/original_sequences/youtube/c40/frames/421/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "421":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c23/frames/421/258.png",
+                            "FaceForensics++/original_sequences/youtube/c23/frames/421/352.png"
+                        ]
+                    }
+                }
+            },
+            "val":{
+                "c40":{
+                    "980":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c40/frames/980/258.png",
+                            "FaceForensics++/original_sequences/youtube/c40/frames/980/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "980":{
+                        "label": "FF-real",
+                        "frames":[
+                            "FaceForensics++/original_sequences/youtube/c23/frames/980/258.png",
+                            "FaceForensics++/original_sequences/youtube/c23/frames/980/352.png"
+                        ]
+                    }
+                }
+            }
+        },
+        "FF-NT":{
+            "train":{
+                "c40":{
+                    "065_089":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/065_089/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/065_089/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "065_089":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/065_089/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/065_089/352.png"
+                        ]
+                    }
+                }
+            },
+            "test":{
+                "c40":{
+                    "755_759":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/755_759/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/755_759/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "755_759":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/755_759/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/755_759/352.png"
+                        ]
+                    }
+                }
+            },
+            "val":{
+                "c40":{
+                    "159_175":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/159_175/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c40/frames/159_175/352.png"
+                        ]
+                    }
+                },
+                "c23":{
+                    "159_175":{
+                        "label": "FF-NT",
+                        "frames":[
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/159_175/258.png",
+                            "FaceForensics++/manipulated_sequences/NeuralTextures/c23/frames/159_175/352.png"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

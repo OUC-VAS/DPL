@@ -1,0 +1,65 @@
+# log dir 
+log_dir: ./Result
+
+# model setting
+running_name: "result_bz16_LC_v1"
+dataset_path_prefix: "/home/data/dataset"  # root path to the datasets
+compress_num: 4
+valid_time: 1
+quality_genres_num: 5
+train_stage: 1
+checkpoint_path: "./Result/weights/bz16_LC_v1_epoch4_validcount5_weight_Stage1.pth"  # path to a pre-trained model of Stage I when training Stage II (By running test_1.py to select weight)
+
+# dataset
+all_dataset: [FaceForensics++, FF-F2F, FF-DF, FF-FS, FF-NT, FaceShifter, DeepFakeDetection, Celeb-DF-v1, Celeb-DF-v2, DFDCP, DFDC, DeeperForensics-1.0, UADFV]
+train_dataset: [FF-F2F, FF-DF, FF-FS, FF-NT,]
+valid_dataset: [FaceForensics++]
+test_dataset: [FaceForensics++_c40, FaceForensics++]
+dataset_json_folder: './dataset_json'
+compression: c23  # compression-level for videos
+train_batchSize: 16   # training batch size
+eval_batchSize: 32   # eval batch size
+test_batchSize: 32   # test batch size
+workers: 8   # number of data loading workers
+frame_num: {'train': 32, 'val': 32, 'test': 32}   # number of frames to use per video in training and testing
+resolution: 224   # resolution of output image to network
+
+# label settings
+label_dict:
+  # DFD
+  DFD_fake: 1
+  DFD_real: 0
+  FaceShifter: 1
+  FF-FH: 1
+  # FF++ + FaceShifter(FF-real+FF-FH)
+  # ucf specific label setting
+  FF-DF: 1
+  FF-F2F: 2
+  FF-FS: 3
+  FF-NT: 4
+  FF-real: 0
+  # CelebDF
+  CelebDFv1_real: 0
+  CelebDFv1_fake: 1
+  CelebDFv2_real: 0
+  CelebDFv2_fake: 1
+  # DFDCP
+  DFDCP_Real: 0
+  DFDCP_FakeA: 1
+  DFDCP_FakeB: 1
+  # DFDC
+  DFDC_Fake: 1
+  DFDC_Real: 0
+  # DeeperForensics-1.0
+  DF_fake: 1
+  DF_real: 0
+  # UADFV
+  UADFV_Fake: 1
+  UADFV_Real: 0
+
+# mean and std for normalization
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+# training config
+nEpochs: 5   # number of epochs to train for
