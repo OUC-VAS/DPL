@@ -2,7 +2,7 @@
 
 ![Powered by](https://img.shields.io/badge/Based_on-Pytorch-blue?logo=pytorch)
 
-This repo contains an official PyTorch implementation of our paper: [DPL: Cross-quality DeepFake Detection via Dual Progressive Learning.]()
+This repo contains an official PyTorch implementation of our paper: [DPL: Cross-quality DeepFake Detection via Dual Progressive Learning.](https://openaccess.thecvf.com/content/ACCV2024/html/Zhang_DPL_Cross-quality_DeepFake_Detection_via_Dual_Progressive_Learning_ACCV_2024_paper.html)
 
 [[pre-trained weights](https://drive.google.com/drive/folders/1nTfqa5ptvOBx6Fkixv98PSVTFjPKN4XV?usp=sharing)]
 
