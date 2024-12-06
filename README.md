@@ -101,10 +101,12 @@ python test.py
 ##  Citation
 If you find our repo useful for your research, please consider citing our paper:
 ```latex
-@InProceedings{li2024dpl,
+@InProceedings{Zhang_2024_ACCV,
     author    = {Zhang, Dongliang and Li, Yunfei and Zhou, Jiaran and Li, Yuezun},
     title     = {DPL: Cross-quality DeepFake Detection via Dual Progressive Learning},
     booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+    month     = {December},
     year      = {2024},
+    pages     = {1116-1132}
 }
 ```
