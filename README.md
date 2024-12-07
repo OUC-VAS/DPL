@@ -98,9 +98,9 @@ python test.py
 
 
 
-##  Citation
+## 📖 Citation
 If you find our repo useful for your research, please consider citing our paper:
-```latex
+```BibTeX
 @InProceedings{Zhang_2024_ACCV,
     author    = {Zhang, Dongliang and Li, Yunfei and Zhou, Jiaran and Li, Yuezun},
     title     = {DPL: Cross-quality DeepFake Detection via Dual Progressive Learning},
