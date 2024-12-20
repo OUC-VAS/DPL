@@ -37,6 +37,7 @@ class DPL(nn.Module):
         # normalize
         x = (x - self.default_mean.to(x)) / self.default_std.to(x)
         fea = self.backbone(x)
+        first_timestep_input = self._norm_fea(fea)
         batchsize = fea.size(0)
         state = fea
         front_output_vqpl = []
@@ -45,8 +46,8 @@ class DPL(nn.Module):
         output_fipl_list = []
         for t in range(self.quality_genres_num):
             if t == 0:
-                output_vqpl = self.vqpl(self._norm_fea(fea), restart=True, front_output=front_output_vqpl, training=training, train_stage=self.train_stage)
-                output_fipl = self.fipl(self._norm_fea(fea), restart=True, front_output=front_output_fipl, training=training, train_stage=self.train_stage)
+                output_vqpl = self.vqpl(first_timestep_input, restart=True, front_output=front_output_vqpl, training=training, train_stage=self.train_stage)
+                output_fipl = self.fipl(first_timestep_input, restart=True, front_output=front_output_fipl, training=training, train_stage=self.train_stage)
             else:
                 if self.train_stage == 1:
                     action = torch.rand(batchsize, 1).cuda()
